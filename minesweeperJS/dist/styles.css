@@ -1,0 +1,84 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    height: 100%;
+}
+
+.app {
+    padding: 1.2rem 0;
+    background-color: #2f5572;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    padding-left: 18px;
+    padding-right: 18px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 2.55rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.title  strong {
+    font-weight: 500;
+}
+
+.btn {
+    color: #FFF;
+    text-decoration: none;
+    padding: 0.75rem 1.2rem;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #d59541;
+    align-self: center;
+    margin-bottom: 2em;
+}
+
+.minesweeper-board {
+    background: #e2e1e0;
+}
+
+.minesweeper-board__tile {
+    width: 50px;
+    height: 50px;
+    float: left;
+    background: #fff;
+    border-radius: 2px;
+    margin: 2px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    color: #000;
+}
+
+.minesweeper-board__tile--closed {
+    background-color: #d59541;
+}
+
+.minesweeper-board__tile--closed:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.minesweeper-board__tile--loser {
+    background-color: #f54e42;
+}
+
+* {
+    box-sizing: border-box;
+}
